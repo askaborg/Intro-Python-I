@@ -1,4 +1,3 @@
-
 def prime(num):
     if (num <= 1):
         return False
@@ -6,5 +5,5 @@ def prime(num):
         if (num % i == 0):
             return False
     return True
-print(prime(21))
+print(prime(23))
 print(prime(16))

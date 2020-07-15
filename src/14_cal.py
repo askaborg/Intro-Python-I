@@ -31,23 +31,23 @@ import sys
 import calendar
 from datetime import datetime
 
-yy = datetime.now().year
+yyyy = datetime.now().year
 mm = datetime.now().month
 
 if len(sys.argv) > 2:
     try:
         if 1 <= int(sys.argv[1]) <= 12:
-            yy = int(sys.argv[2])
+            yyyy = int(sys.argv[2])
             mm = int(sys.argv[1])
-            print(calendar.month(yy, mm))
+            print(calendar.month(yyyy, mm))
     except:
         print('Please enter in the form of `14_cal.py [month] [year]`')
 elif len(sys.argv) > 1:
     try:
         if 1 <= int(sys.argv[1]) <= 12:
             mm = int(sys.argv[1])
-            print(calendar.month(yy, mm))
+            print(calendar.month(yyyy, mm))
     except:
         print('Please enter in the form of `14_cal.py [month] [year]`')
 else:
-    print(calendar.month(yy, mm))
+    print(calendar.month(yyyy, mm))
